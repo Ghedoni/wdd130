@@ -19,12 +19,10 @@
 
 /* Header container */
 .header {
-    display: flex;
-    align-items: center; /* Vertically center items */
-    justify-content: space-between; /* Space out the logo and nav links */
-    padding: 10px 20px; /* Add some padding */
-    background-color: #000; /*background color */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    padding: 10px 20px;
 }
 
 /* Logo image */

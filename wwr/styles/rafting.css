@@ -1,0 +1,167 @@
+/* Import Poppins font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/* Define CSS variables */
+:root {
+    --primary-color: #48BFE3;
+    --secondary-color: #4EA8DE;
+    --accent1-color: #64DFDF;
+    --accent2-color: #80FFDB;
+
+    --heading-font: 'Poppins', serif;
+    --paragraph-font: 'Poppins', sans-serif;
+
+    --nav-background-color: var(--accent1-color);
+    --nav-link-color: var(--accent2-color);
+    --nav-hover-link-color: var(--primary-color);
+    --nav-hover-background-color: var(--primary-color);
+}
+
+/* Header container */
+.header {
+    display: flex;
+    align-items: center; /* Vertically center items */
+    justify-content: space-between; /* Space out the logo and nav links */
+    padding: 10px 20px; /* Add some padding */
+    background-color: #000; /*background color */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Logo image */
+.header img {
+    max-width: 150px; /* Adjust as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Navigation styles */
+.header nav {
+    display: flex;
+    gap: 20px; /* Space between links */
+}
+
+/* Navigation links */
+.header nav a {
+    color: var(--nav-link-color);
+    text-decoration: none; /* Remove underline */
+    font-family: var(--paragraph-font);
+    padding: 8px 12px; /* Padding for clickable area */
+    border-radius: 4px; /* Slight rounding of corners */
+}
+
+.header nav a:hover {
+    background-color: var(--nav-hover-background-color);
+    color: var(--nav-hover-link-color);
+}
+
+/* Global styles */
+body {
+    font-family: var(--paragraph-font);
+    margin: 0;
+    padding: 0;
+    color: #000;
+}
+
+h2 {
+    font-family: var(--heading-font);
+    color: #4EA8DE;
+}
+
+p {
+    padding: 25px;
+}
+
+/* Remove underlines from social media links */
+.sociallinks a {
+    text-decoration: none;
+}
+
+/* Hero section */
+.hero {
+    position: relative;
+    width: 100%;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+article {
+    position: absolute;
+    top: 51%; /* Adjust as needed */
+    left: 50%; /* Adjust as needed */
+    transform: translate(-50%, -50%); /* Center the article */
+    background-color: rgba(0, 0, 0, 0.7); /* Slightly more opaque background for better readability */
+    color: #fff;
+    display: flex;
+    align-items: center;
+    float: left;
+    gap: 10%;
+    padding: 100px;
+    height: 100px;
+    width: 100%; /* Adjust as needed */
+    max-width: 800px; /* Adjust as needed */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add a subtle shadow for better contrast */
+}
+article img {
+    float: left;
+    margin-left: 10px;
+    max-width: 200px; /* Adjust the width as needed */
+    height: auto;
+}
+
+
+h1 {
+    position: absolute;
+    top: 20px; /* Adjust as needed */
+    align-items: center;
+    color: #000;
+    left: 20px; /* Adjust as needed */
+}
+
+/* Container to limit page width */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Container for the Picture Gallery */
+.picture {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/* Styling for images within the Picture Gallery */
+.picture img {
+    width: 100%;
+    max-width: 1500px; /* Adjust the max-width as needed */
+    height: 1500px; /* Adjust the height as needed */
+    object-fit: cover; /* Ensure images cover the specified dimensions without distortion */
+    margin: 10px; /* Optional: Add some margin between images */
+}
+
+/* Navigation styles */
+nav a {
+    color: var(--nav-link-color);
+    padding: 10px;
+}
+
+nav a:hover {
+    background-color: var(--nav-hover-background-color);
+    color: var(--nav-hover-link-color);
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 20px;
+}
+
+footer .sociallinks img {
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+}

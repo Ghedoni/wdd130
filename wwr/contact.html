@@ -2,74 +2,80 @@
 <html lang="en-US">
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale= 1">
-    <title>Contact us | Ghedoni Elemi</title>
-    <meta name="description" content="Sit back and find out">
-    <meta name="author" content="Ghedoni Elemi">
-    <link rel="stylesheet" href="styles/">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact Us | Whitewater Wonders</title>
+    <meta name="description" content="Get in touch with Whitewater Wonders for inquiries, reservations, and suggestions. We are here to help you.">
+    <meta name="author" content="Whitewater Wonders">
+    <link rel="stylesheet" href="styles/contact.css">
 </head>
 <body>
     <header class="header">
-        <img src="images/logone.jpg" alt="The website Logo">
+        <img src="images/logone.jpg" alt="The website Logo" class="logo">
         <nav>
-            <a href="">Home</a>
-            <a href="">About</a>
-            <a href="">Trips</a>
-            <a href="">Contact Us</a>
+            <a href="site-plan-rafting.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact Us</a>
         </nav>
     </header>
     <main class="container">
-        <div class="hero">
-            <img src="images/hero1.jpg" alt="logo.png">
-            <h1>Whitewater Wonders</h1>
-            <article>
-                <img src="images/HappyClient.jpg" alt="Happy Faces">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum beatae quos repellat explicabo. Cumque eaque repudiandae quasi veritatis aperiam. Architecto nam fugiat quas eaque porro recusandae qui debitis, facere labore.</p>
-            </article>
-        </div>
-        <section>
-            <h2>History</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius qui incidunt vitae hic ex? Incidunt, natus! Sed, impedit praesentium veritatis ducimus, magnam ex assumenda accusantium incidunt in nihil repellendus deleniti?
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe, expedita at obcaecati velit incidunt repudiandae deserunt dolore quae porro architecto minus cum vitae. Porro earum eum quod. Sapiente, recusandae atque.
-            </p>
+        <section class="contact">
+            <h2>Contact Information</h2>
+            <p>Address: 123 River Road, Raft City, RC 12345</p>
+            <p>Phone: +1 (555) 123-4567</p>
+            <p>Email: info@whitewaterwonders.com</p>
+            <nav class="sociallinks">
+                <a href="https://facebook.com">
+                  <img src="images/facebook.png" alt="Facebook">
+                </a>
+                <a href="https://twitter.com">
+                  <img src="images/twitter.png" alt="Twitter">
+                </a>
+                <a href="https://instagram.com">
+                  <img src="images/instagram.webp" alt="Instagram">
+                </a>
+            </nav>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.835434509667!2d-122.42120028468229!3d37.77851977975817!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085810b24cd12c3%3A0x27bba6394c1e6a3f!2sGolden%20Gate%20Bridge!5e0!3m2!1sen!2sus!4v1601516432533!5m2!1sen!2sus"></iframe>
+            </div>
         </section>
-        <section class="picture">
-            <h2>Adventure Awaits You!</h2>
-            <figure>
-                <img src="images/White_Rafting1.jpg" alt="We are here">
-                <figcaption>Bar Beach</figcaption>
+        <section class="employees">
+            <h2>Our Team</h2>
+            <figure class="employee">
+                <img src="images/employee1.jpeg" alt="John Doe">
+                <figcaption> John Doe - CEO</figcaption>
             </figure>
-            <figure>
-                <img src="images/chandan-chaurasia-kTRFDUBBRdI-unsplash.jpg" alt="Imagine">
-                <figcaption>River Niger</figcaption>
+            <figure class="employee">
+                <img src="images/employee2.jpeg" alt="Jane Smith">
+                <figcaption> Jane Smith - Marketing Director</figcaption>
             </figure>
-            <figure>
-                <img src="images/Whiteraft2.jpg" alt="You">
-                <figcaption>New Beach</figcaption>
-            </figure>
-            <figure>
-                <img src="images/whiteraft3.jpg" alt="On">
-                <figcaption>Good Beach</figcaption>
-            </figure>
-            <figure>
-                <img src="images/whiteraft4.jpg" alt="A boat">
-                <figcaption>Brightside Beach</figcaption>
+            <figure class="employee">
+                <img src="images/employee3.jpeg" alt="Mike Johnson">
+                <figcaption> Mike Johnson - Lead Guide</figcaption>
             </figure>
         </section>
-    </main>
-    <footer>
-        <p>©2024|Whitewater Wonders| Ghedoni</p>
-        <nav class="sociallinks">
-            <a href="https://facebook.com">
-              <img src="images/facebook.png" alt="Facebook">
-            </a>
-            <a href="https://twitter.com">
-              <img src="images/twitter.png" alt="Twitter">
-            </a>
-            <a href="https://instagram.com">
-              <img src="images/instagram.webp" alt="Instagram">
-            </a>
-        </nav>
-    </footer>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+          
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+          
+            <p>Purpose of Message:</p>
+            <label><input type="radio" name="purpose" value="General Inquiry" required> General Inquiry</label>
+            <label><input type="radio" name="purpose" value="Reservation Question"> Reservation Question</label>
+            <label><input type="radio" name="purpose" value="Website Suggestion"> Website Suggestion</label>
+          
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+          
+            <label><input type="checkbox" name="newsletter" value="yes"> Please subscribe me to the monthly newsletter</label>
+          
+            <button type="submit">Send Message</button>
+          </form>
+        <footer>
+            <p>©2024|Whitewater Wonders| Ghedoni</p>
+        </footer>
+        </main>
 </body>
 </html>

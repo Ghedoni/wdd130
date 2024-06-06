@@ -1,0 +1,147 @@
+/* Import Poppins font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/* Define CSS variables */
+:root {
+    --primary-color: #48BFE3;
+    --secondary-color: #4EA8DE;
+    --accent1-color: #64DFDF;
+    --accent2-color: #80FFDB;
+
+    --heading-font: 'Poppins', serif;
+    --paragraph-font: 'Poppins', sans-serif;
+
+    --nav-background-color: var(--accent1-color);
+    --nav-link-color: var(--accent2-color);
+    --nav-hover-link-color: var(--primary-color);
+    --nav-hover-background-color: var(--primary-color);
+}
+
+/* Header container */
+.header {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+/* Logo image */
+.header img {
+    max-width: 150px; /* Adjust as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Navigation styles */
+.header nav {
+    display: flex;
+    gap: 20px; /* Space between links */
+}
+
+/* Navigation links */
+.header nav a {
+    color: var(--nav-link-color);
+    text-decoration: none; /* Remove underline */
+    font-family: var(--paragraph-font);
+    padding: 8px 12px; /* Padding for clickable area */
+    border-radius: 4px; /* Slight rounding of corners */
+}
+
+.header nav a:hover {
+    background-color: var(--nav-hover-background-color);
+    color: #000;
+}
+
+/* Global styles */
+body {
+    font-family: var(--paragraph-font);
+    margin: 0;
+    padding: 0;
+    color: #000;
+}
+
+h2 {
+    font-family: var(--heading-font);
+    color: #4EA8DE;
+}
+
+p {
+    padding: 25px;
+}
+
+/* Remove underlines from social media links */
+.sociallinks a {
+    text-decoration: none;
+    display: block;
+}
+
+.sociallinks img {
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+}
+
+/* Container to limit page width */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.contact {
+    display: flex;
+}
+.map {
+    float: right;
+    display: block;
+    width: 200px; 
+    height: 150px; 
+}
+
+nav a {
+    color: var(--nav-link-color);
+    padding: 10px;
+}
+
+nav a:hover {
+    background-color: var(--nav-hover-background-color);
+    color: var(--nav-hover-link-color);
+}
+form {
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+  
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+}
+input[type="radio"] {
+    margin-right: 10px;
+}
+button[type="submit"] {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+  
+button[type="submit"]:hover {
+    background-color: #3e8e41;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 20px;
+}

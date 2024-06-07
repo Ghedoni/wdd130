@@ -20,14 +20,14 @@
 /* Header container */
 .header {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 1fr;
     align-items: center;
     padding: 10px 20px;
 }
 
 /* Logo image */
 .header img {
-    max-width: 150px; /* Adjust as needed */
+    max-width: 100px; /* Adjust as needed */
     height: auto; /* Maintain aspect ratio */
 }
 
@@ -48,7 +48,17 @@
 
 .header nav a:hover {
     background-color: var(--nav-hover-background-color);
-    color: var(--nav-hover-link-color);
+    color: #000;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
 }
 
 /* Global styles */
@@ -57,11 +67,17 @@ body {
     margin: 0;
     padding: 0;
     color: #000;
+    box-sizing: border-box;
 }
 
 h2 {
     font-family: var(--heading-font);
     color: #4EA8DE;
+}
+
+.head1 {
+    position: relative;
+    padding: 5px;
 }
 
 p {
@@ -210,4 +226,71 @@ button[type="submit"] {
   
 button[type="submit"]:hover {
     background-color: #3e8e41;
+}
+.newsletter-signup {
+    padding: 20px;
+    text-align: center;
+}
+
+.newsletter-signup form {
+    display: inline-block;
+    text-align: left;
+}
+
+.newsletter-signup label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.newsletter-signup input {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+}
+
+.newsletter-signup button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.full-width-image {
+    width: 100%;
+    height: auto;
+}
+
+
+.cta {
+    padding: 20px;
+    text-align: center;
+}
+
+.cta a {
+    color: #333;
+    text-decoration: underline;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 10px;
+    padding: 20px;
+}
+
+.about-grid .grid-item {
+    text-align: center;
+}
+
+.about-grid .grid-item img {
+    width: 100%;
+    height: auto;
+}
+
+.about-grid .grid-item h3 {
+    margin-top: 10px;
 }

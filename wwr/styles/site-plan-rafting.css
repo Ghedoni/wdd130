@@ -44,7 +44,10 @@ nav a:link, nav a:visited{
     color: var(--nav-link-color);
 }
 nav a:hover{
-    color:: var(--nav-hover-link-color);
+    color:: var(var(--nav-hover-link-color));
     background-color: var(--nav-hover-background-color);
 }
-\end{code}
+.logo {
+    max-width: 10px; 
+    height: auto;
+}
